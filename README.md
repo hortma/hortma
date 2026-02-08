@@ -1,4 +1,4 @@
-<h1 align="center">Hello 👋😀, I'm Arthur Bueno, and welcome to my GitHub page!</h1>
+<h1 align="center">Hello 👋😀, I'm Arthur Hortmann, and welcome to my GitHub page!</h1>
 <h3 align="center">I am a Front-End student from Brazil, and I still have a huge way to go through to become a developer!</h3>
 
 - Check my Portfolio out! [Portfolio Website](https://hortma.github.io/MyPortfolio/)
