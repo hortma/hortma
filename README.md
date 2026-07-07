@@ -1,5 +1,5 @@
 <h1 align="center">Hello 👋, I'm Arthur Hortmann, and welcome to my GitHub page!</h1>
-<h3 align="center">I am a Systems Analysis and Development Student from Brazil, and I still have a long way to go through to get my first job as a developer! 😄 </h3>
+<h3 align="center">I am a Higher Technology Degree in Internet Systems Student from Brazil, and I still have a long way to go through to get my first job as a developer! 😄 </h3>
 
 - Check my Portfolio out! [Portfolio Website](https://hortma.github.io/MyPortfolio/)
 
