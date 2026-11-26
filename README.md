@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.png" alt="Your Name — Full Stack Developer" width="100%" />
+  <img src="./assets/hero.png?v=d3324ea9" alt="Your Name — Full Stack Developer" width="100%" />
 </p>
 
 <!-- Add more sections the same way: create src/about.html, then -->
