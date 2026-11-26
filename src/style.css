@@ -1,0 +1,49 @@
+  :root {
+      --card: #11161d;
+      --text: #e6edf3;
+      --muted: #7d8590;
+      --accent: #8ed1e6;
+  }
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      background: transparent;
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--text);
+  }
+
+  /* The renderer screenshots this element only */
+  #card {
+      width: 900px;
+      padding: 48px;
+      background: var(--card);
+      border-radius: 8px;
+  }
+
+  .label {
+      font-family: "JetBrains Mono", ui-monospace, monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+  }
+
+  h1 {
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.05;
+      margin-bottom: 16px;
+  }
+
+  p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 560px;
+  }
