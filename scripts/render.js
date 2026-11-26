@@ -2,9 +2,10 @@
 // Only the element with id="card" is captured, so the image
 // size always matches your design (no extra whitespace).
 import { chromium } from "playwright";
-import { readdirSync, mkdirSync } from "node:fs";
+import { readdirSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve, basename } from "node:path";
 import { pathToFileURL } from "node:url";
+import { createHash } from "node:crypto";
 
 const SRC = resolve("src");
 const OUT = resolve("assets");
@@ -16,7 +17,12 @@ const page = await browser.newPage({
   viewport: { width: 1000, height: 800 },
   deviceScaleFactor: 3, // crisp on retina screens
 });
+
+const rendered = [];
+
 for (const file of files) {
+  // reset the viewport so the previous card's size doesn't leak into this page
+  await page.setViewportSize({ width: 1000, height: 800 });
   await page.goto(pathToFileURL(resolve(SRC, file)).href);
   await page.waitForLoadState("networkidle");
   await page.evaluate(() => document.fonts.ready);
@@ -33,9 +39,23 @@ for (const file of files) {
     height: Math.ceil(box.y + box.height),
   });
 
-  const out = resolve(OUT, basename(file, ".html") + ".png");
-  await card.screenshot({ path: out, omitBackground: true });
-  console.log("rendered", out);
+  const name = basename(file, ".html");
+  await card.screenshot({ path: resolve(OUT, name + ".png"), omitBackground: true });
+  rendered.push(name);
+  console.log("rendered", name);
 }
 
 await browser.close();
+
+let readme = readFileSync("README.md", "utf8");
+for (const name of rendered) {
+  const hash = createHash("md5")
+    .update(readFileSync(resolve(OUT, name + ".png")))
+    .digest("hex")
+    .slice(0, 8);
+  readme = readme.replace(
+    new RegExp(`\\./assets/${name}\\.png(\\?v=\\w+)?`, "g"),
+    `./assets/${name}.png?v=${hash}`
+  );
+}
+writeFileSync("README.md", readme);
