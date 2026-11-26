@@ -15,7 +15,7 @@ const files = readdirSync(SRC).filter((f) => f.endsWith(".html"));
 const browser = await chromium.launch();
 const page = await browser.newPage({
   viewport: { width: 1000, height: 800 },
-  deviceScaleFactor: 3, // crisp on retina screens
+  deviceScaleFactor: 2, // crisp on retina screens
 });
 
 const rendered = [];
