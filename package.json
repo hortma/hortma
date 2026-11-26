@@ -1,0 +1,12 @@
+{
+  "name": "profile-readme",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "playwright install chromium",
+    "render": "node scripts/render.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}
