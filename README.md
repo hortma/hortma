@@ -1,6 +1,6 @@
 <p>Teste</p>
 <p align="center">
-  <img src="./assets/hero.png?v=ec4c99fa" alt="Your Name — Full Stack Developer" width="100%" />
+  <img src="./assets/hero.png?v=7d40033a" alt="Your Name — Full Stack Developer" width="100%" />
 </p>
 <p>Testando</p>
 
