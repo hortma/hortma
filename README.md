@@ -1,6 +1,6 @@
 <p>Teste</p>
 <p align="center">
-  <img src="./assets/hero.png?v=ec4c99fa" alt="Your Name — Full Stack Developer" width="100%" />
+  <img src="./assets/hero.png?v=7d40033a" alt="Your Name — Full Stack Developer" width="100%" />
 </p>
 <p>Testando</p>
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/arthur-hortmann-83568b288/)
