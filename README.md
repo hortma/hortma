@@ -3,6 +3,7 @@
   <img src="./assets/hero.png?v=ec4c99fa" alt="Your Name — Full Stack Developer" width="100%" />
 </p>
 <p>Testando</p>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge)](https://www.linkedin.com/in/arthur-hortmann-83568b288/)
 
 <!-- Add more sections the same way: create src/about.html, then -->
 <!-- <img src="./assets/about.png" alt="About me" width="100%" /> -->
