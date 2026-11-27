@@ -58,7 +58,7 @@ p {
 }
 
 #card {
-    width: 1200px;
+    width: 900px;
     background-color: var(--color__base);
     border-radius: var(--border-radius-m);
     padding: var(--padding-m);
