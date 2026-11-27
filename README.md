@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/index.png" alt="Your Name — Full Stack Developer" width="100%" />
+  <img src="./assets/hero.png?v=index.html" alt="Your Name — Full Stack Developer" width="100%" />
 </p>
 
 <p align="center">
