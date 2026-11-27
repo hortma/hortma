@@ -30,6 +30,7 @@
     --border-radius-m: 15px;
 
     --padding-m: 15px;
+    --card-padding: calc(var(--padding-m) * 2);
 }
 
 * {
@@ -42,6 +43,7 @@
 }
 
 body {
+    width: 900px;
     background-color: transparent;
 }
 
@@ -49,17 +51,58 @@ p {
     color: var(--color__text);
 }
 
+b {
+    color: var(--color__mauve)
+}
+
+img {
+    height: 50%;
+    width: auto;
+}
+
 .label {
-    color: var(--color__mauve);
+    color: var(--color__red);
 }
 
 .string {
     color: var(--color__green);
 }
 
+.flex__space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 #card {
-    width: 900px;
+    width: 100%;
     background-color: var(--color__base);
+    border: 1px solid var(--color__surface-0);
     border-radius: var(--border-radius-m);
-    padding: var(--padding-m);
+    overflow: hidden;
+    padding: var(--card-padding);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Title bar: pure CSS, no HTML needed */
+#card::before {
+    content: "arthur@hortmann: ~/readme.md";
+    display: block;
+    flex-shrink: 0;
+    height: 44px;
+    margin: calc(var(--card-padding) * -1) calc(var(--card-padding) * -1) 0;
+
+    background:
+        radial-gradient(circle at 28px 22px, var(--color__red) 5px, transparent 6px),
+        radial-gradient(circle at 50px 22px, var(--color__yellow) 5px, transparent 6px),
+        radial-gradient(circle at 72px 22px, var(--color__green) 5px, transparent 6px),
+        var(--color__mantle);
+    border-bottom: 1px solid var(--color__surface-0);
+
+    color: var(--color__overlay-1);
+    font-size: 13px;
+    line-height: 44px;
+    text-align: center;
 }
