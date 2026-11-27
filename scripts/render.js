@@ -14,7 +14,7 @@ mkdirSync(OUT, { recursive: true });
 const files = readdirSync(SRC).filter((f) => f.endsWith(".html"));
 const browser = await chromium.launch();
 const page = await browser.newPage({
-  viewport: { width: 1000, height: 800 },
+  viewport: { width: 1200, height: 800 },
   deviceScaleFactor: 2, // crisp on retina screens
 });
 
@@ -22,7 +22,7 @@ const rendered = [];
 
 for (const file of files) {
   // reset the viewport so the previous card's size doesn't leak into this page
-  await page.setViewportSize({ width: 1000, height: 800 });
+  await page.setViewportSize({ width: 1200, height: 800 });
   await page.goto(pathToFileURL(resolve(SRC, file)).href);
   await page.waitForLoadState("networkidle");
   await page.evaluate(() => document.fonts.ready);

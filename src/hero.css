@@ -1,0 +1,65 @@
+:root {
+    /* Catppuccin Theme */
+    --color__rosewater: rgb(245, 224, 220);
+    --color__flamingo: rgb(242, 205, 205);
+    --color__pink: rgb(245, 194, 231);
+    --color__mauve: rgb(203, 166, 247);
+    --color__red: rgb(243, 139, 168);
+    --color__maroon: rgb(235, 160, 172);
+    --color__peach: rgb(250, 179, 135);
+    --color__yellow: rgb(249, 226, 175);
+    --color__green: rgb(166, 227, 161);
+    --color__teal: rgb(148, 226, 213);
+    --color__sky: rgb(137, 220, 235);
+    --color__sapphire: rgb(116, 199, 236);
+    --color__blue: rgb(137, 180, 250);
+    --color__lavender: rgb(180, 190, 254);
+    --color__text: rgb(205, 214, 244);
+    --color__subtext-1: rgb(186, 194, 222);
+    --color__subtext-0: rgb(166, 173, 200);
+    --color__overlay-2: rgb(147, 153, 178);
+    --color__overlay-1: rgb(127, 132, 156);
+    --color__overlay-0: rgb(108, 112, 134);
+    --color__surface-2: rgb(88, 91, 112);
+    --color__surface-1: rgb(69, 71, 90);
+    --color__surface-0: rgb(49, 50, 68);
+    --color__base: rgb(30, 30, 46);
+    --color__mantle: rgb(24, 24, 37);
+    --color__crust: rgb(17, 17, 27);
+
+    --border-radius-m: 15px;
+
+    --padding-m: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Cascadia Code", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    background-color: transparent;
+}
+
+p {
+    color: var(--color__text);
+}
+
+.label {
+    color: var(--color__mauve);
+}
+
+.string {
+    color: var(--color__green);
+}
+
+#card {
+    width: 1200px;
+    background-color: var(--color__base);
+    border-radius: var(--border-radius-m);
+    padding: var(--padding-m);
+}
