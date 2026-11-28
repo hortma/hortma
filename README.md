@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/index-mobile.png">
+    <source media="(max-width: 600px)" srcset="assets/index-mobile.png?v=f4e41988">
     <img src="assets/index-desktop.png" alt="Arthur Hortmann, Full Stack Developer" width="100%">
   </picture>
 </p>
