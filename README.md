@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/index-mobile.png">
-    <img src="assets/index-desktop.png" alt="Arthur Hortmann, Full Stack Developer" width="100%">
+    <img src="assets/index.png" alt="Arthur Hortmann, Full Stack Developer" width="100%">
   </picture>
 </p>
 
