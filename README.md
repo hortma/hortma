@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/index.png" alt="Your Name — Full Stack Developer" width="100%" />
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/index-mobile.png">
+    <img src="assets/index-desktop.png" alt="Arthur Hortmann, Full Stack Developer" width="100%">
+  </picture>
 </p>
 
 <p align="center">

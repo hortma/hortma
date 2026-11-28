@@ -43,7 +43,8 @@
 }
 
 body {
-    width: 900px;
+    width: 100%;
+    max-width: 900px;
     background-color: transparent;
 }
 
@@ -106,4 +107,22 @@ img {
     font-size: 13px;
     line-height: 44px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --card-padding: 20px;
+    }
+
+    #card {
+        gap: 24px;
+    }
+
+    #card::before {
+        font-size: 12px;
+    }
+
+    .string {
+        font-size: 1.75rem;
+    }
 }
