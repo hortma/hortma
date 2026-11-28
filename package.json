@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "setup": "playwright install chromium",
-    "render": "node scripts/render.js"
+    "render": "node scripts/render.mjs"
   },
   "devDependencies": {
     "playwright": "^1.48.0"
